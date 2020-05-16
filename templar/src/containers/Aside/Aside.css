@@ -1,0 +1,33 @@
+.parent-nav{
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.menu-container{
+    margin-top: 2rem;
+}
+
+#active{
+    background-color: #FA4A84;
+}
+
+@media(min-width: 768px) {
+    .aside-wrapper {
+        width: 15%;
+        height: 100vh;
+
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        background-color: #270450;
+        transition: ease-in-out 1s;
+    }
+}
