@@ -2,7 +2,7 @@ import React from 'react';
 
 import userIcon from '../../img/user.PNG';
 import downArrow from '../../img/down-arrow.PNG';
-import mail from '../../img/mail.PNG';
+import mail from '../../img/navlink_envelope.svg';
 
 const Header = (props) => {
     return (
@@ -19,7 +19,7 @@ const Header = (props) => {
                 <button
                     style={{ background: 'transparent', borderLeft: '1px dashed #ccc', borderRight: '1px dashed #ccc', borderBottom: 'none', borderTop: 'none', outline: 'none', height: 'inherit' }}
                 >
-                    <img src={mail} width='30' height='30' />
+                    <img src={mail} width='20' height='20' />
                 </button>
                 <button
                     style={{ background: 'transparent', border: 'none', outline: 'none', height: 'inherit', display: 'flex', justifyContent: 'center', alignItems: 'center', margin: 'none', minWidth: '8rem' }}

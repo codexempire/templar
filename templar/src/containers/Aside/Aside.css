@@ -1,12 +1,14 @@
 .parent-nav{
     text-decoration: none;
     color: white;
-    font-size: .8rem;
+    font-size: .65rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     line-height: 2rem;
     text-align: center;
     align-items: center;
+    width: 90%;
+    padding-left: 10%;
 }
 
 .menu-container{
@@ -26,6 +28,7 @@
         justify-content: space-evenly;
         background-color: transparent!important;
         border: none;
+        margin-left: 1rem;
     }
     
 
@@ -47,9 +50,10 @@
         transition: ease-in .5s!important;
         z-index: 99;
     }
-
+ 
     .aside-wrapper.show{
         left: -80%;
+        transition: ease-out 1s!important;
     }
 
     .header{
@@ -63,6 +67,14 @@
     .cancel-button{
         display: block;
     }
+
+    .sm-background{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 51;
+    }
 }
 
 @media(min-width: 768px) {
@@ -71,8 +83,9 @@
     }
 
     .logo{
-        width: 150px;
-        height: 40px;
+        width: 120px;
+        height: 30px;
+        padding-top: 1rem;
     }
 
     .cancel-button{
@@ -80,15 +93,23 @@
     }
 
     .aside-wrapper {
-        width: 15%;
+        width: 18%;
         height: 100vh;
 
         position: fixed;
         top: 0;
         bottom: 0;
-        left: 0%;
+        left: -18%;
 
         background-color: #270450;
         transition: ease-in-out 1s;
+    }
+    
+    .aside-wrapper.show{
+        left: 0;
+    }
+
+    .sm-background{
+        display: none;
     }
 }

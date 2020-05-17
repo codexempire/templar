@@ -8,27 +8,41 @@ const Transactions = () => {
     const [showTransaction, setShowTransaction] = useState(false);
     return (
         <>
-            <div style={{ display: 'flex', justifyContent: 'flex-start', padding: '0 5%' }}>
-                <div style={!showTransaction ? { width: '90%', transition: 'ease-out 1s' } : { width: '70%', transition: 'ease-in 1s' }}>
-                    <h1 className='title'>
-                        All accounts
-                </h1>
+            <div style={{ display: 'flex', justifyContent: 'flex-start', padding: '3rem 5%', height: '100%' }}>
+                <div className={!showTransaction ? 'ninety' : 'seventy'}>
+                    
+                    <div className='title' style={{ width: '100%', fontSize: '.8rem', color: '#ccc'  }}>
+                        <div>
+                            Current
+                        </div>
+                        <div>
+                            Sort Code
+                        </div>
+                        <div style={{ width: '100%', display: 'flex' }}>
+                            <p className='transaction-amount' style={{ fontWeight: 'bolder', fontSize: '1rem', flexGrow: '1', color: '#333' }}>
+                                <strong>&#8358;2,650,234.96</strong>
+                            </p>
+                            <button className='btn-2'>
+                                Make a payment
+                            </button>
+                        </div>
+                    </div>
 
                     <div
                         style={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'wrap', margin: '3rem auto', width: '95%' }}
                     >
                         <div className='date-time'>
-                            <div style={{ flexGrow: 1 }}>
+                            <div style={{ flexGrow: 1, fontSize: '.7rem' }}>
                                 Friday 15 July 2019
-                        </div>
-                            <div>
-                                <button style={{ color: '#FA4A84', border: '1px solid #ccc', width: '8rem', backgroundColor: 'white', outline: 'none', padding: '.5rem 1rem', borderRadius: '.5rem', margin: '0 1rem' }}>
-                                    Export data
-                            </button>
-                                <button style={{ color: '#FA4A84', border: '1px solid #ccc', width: '8rem', backgroundColor: 'white', outline: 'none', padding: '.5rem 1rem', borderRadius: '.5rem', margin: '0 1rem' }}>
-                                    Filter Data
-                            </button>
                             </div>
+                        <div>
+                            <button className='btn-1'>
+                                Export data
+                            </button>
+                            <button className='btn-1'>
+                                Filter Data
+                            </button>
+                        </div>
                         </div>
                         <ul className='transaction-list'>
                             <li
@@ -46,6 +60,44 @@ const Transactions = () => {
                                 <span className='transaction-time'>
                                     8:30pm
                             </span>
+                                <span className='transaction-amount' style={{ color: 'green' }}>
+                                    &#8358;2,650,234.96
+                            </span>
+                            </li>
+                            <li
+                                onClick={() => setShowTransaction(prevState => !prevState)}
+                            >
+                                <img src={currentPng} width='40' height='40' />
+                                <span className='transaction-user'>
+                                    <div className='transaction-name'>
+                                        Terry Williams
+                                </div>
+                                    <div className='transaction-cap'>
+                                        Sales
+                                </div>
+                                </span>
+                                <span className='transaction-time'>
+                                    8:30pm
+                            </span>
+                                <span className='transaction-amount'>
+                                    &#8358;2,650,234.96
+                                </span>
+                            </li>
+                            <li
+                                onClick={() => setShowTransaction(prevState => !prevState)}
+                            >
+                                <img src={currentPng} width='40' height='40' />
+                                <span className='transaction-user'>
+                                    <div className='transaction-name'>
+                                        Terry Williams
+                                </div>
+                                    <div className='transaction-cap'>
+                                        Sales
+                                </div>
+                                </span>
+                                <span className='transaction-time'>
+                                    8:30pm
+                            </span>
                                 <span className='transaction-amount'>
                                     &#8358;2,650,234.96
                             </span>
@@ -67,13 +119,89 @@ const Transactions = () => {
                             </span>
                                 <span className='transaction-amount'>
                                     &#8358;2,650,234.96
+                                </span>
+                            </li>
+                            <li
+                                onClick={() => setShowTransaction(prevState => !prevState)}
+                            >
+                                <img src={currentPng} width='40' height='40' />
+                                <span className='transaction-user'>
+                                    <div className='transaction-name'>
+                                        Terry Williams
+                                </div>
+                                    <div className='transaction-cap'>
+                                        Sales
+                                </div>
+                                </span>
+                                <span className='transaction-time'>
+                                    8:30pm
                             </span>
+                                <span className='transaction-amount' style={{ color: 'green' }}>
+                                    &#8358;2,650,234.96
+                            </span>
+                            </li>
+                            <li
+                                onClick={() => setShowTransaction(prevState => !prevState)}
+                            >
+                                <img src={currentPng} width='40' height='40' />
+                                <span className='transaction-user'>
+                                    <div className='transaction-name'>
+                                        Terry Williams
+                                </div>
+                                    <div className='transaction-cap'>
+                                        Sales
+                                </div>
+                                </span>
+                                <span className='transaction-time'>
+                                    8:30pm
+                            </span>
+                                <span className='transaction-amount' style={{ color: 'green' }}>
+                                    &#8358;2,650,234.96
+                                </span>
+                            </li>
+                            <li
+                                onClick={() => setShowTransaction(prevState => !prevState)}
+                            >
+                                <img src={currentPng} width='40' height='40' />
+                                <span className='transaction-user'>
+                                    <div className='transaction-name'>
+                                        Terry Williams
+                                </div>
+                                    <div className='transaction-cap'>
+                                        Sales
+                                </div>
+                                </span>
+                                <span className='transaction-time'>
+                                    8:30pm
+                            </span>
+                                <span className='transaction-amount'>
+                                    &#8358;2,650,234.96
+                            </span>
+                            </li>
+                            <li
+                                onClick={() => setShowTransaction(prevState => !prevState)}
+                            >
+                                <img src={currentPng} width='40' height='40' />
+                                <span className='transaction-user'>
+                                    <div className='transaction-name'>
+                                        Terry Williams
+                                </div>
+                                    <div className='transaction-cap'>
+                                        Sales
+                                </div>
+                                </span>
+                                <span className='transaction-time'>
+                                    8:30pm
+                            </span>
+                                <span className='transaction-amount' style={{ color: 'green' }}>
+                                    &#8358;2,650,234.96
+                                </span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div className='transaction-details' style={!showTransaction ? null : { left: '70%', right: '0%', transition: 'ease-in 1s' }}>
+                <div className={ !showTransaction ? 'transaction-details': 'transaction-details show-transact'}>
                     <div className='transaction-details-header'>
                         Transfer
 

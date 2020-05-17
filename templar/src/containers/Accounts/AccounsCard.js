@@ -32,7 +32,7 @@ const AccountsCard = ({ page, icon }) => {
             </div>
 
             <div style={{ width: '20%', padding: '1rem 0' }}>
-                <img src={icon} width='50' height='50' />
+                <img src={icon} width='35' height='35' />
             </div>
         </Link>
     )

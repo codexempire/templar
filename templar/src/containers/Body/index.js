@@ -16,7 +16,7 @@ const Body = (props) => {
         >
             <Header setWidth={props.setWidth} />
 
-            <div className='body-container'>
+            <div className='body-container' style={{ height: '100%' }}>
                 { children }
             </div>
         </div>

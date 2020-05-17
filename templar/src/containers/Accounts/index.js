@@ -2,9 +2,9 @@ import React from 'react';
 import Body from '../Body';
 import AccountsCard, { AddAccountsCard } from './AccounsCard';
 
-import currentPng from '../../img/current.PNG'
-import SavingsPng from '../../img/savings.PNG'
-import taxPng from '../../img/tax.PNG'
+import currentPng from '../../img/currentaccountlogo.svg'
+import SavingsPng from '../../img/savingsaccountlogo.svg'
+import taxPng from '../../img/taxaccountlogo.svg'
 
 const Accounts = () => {
     return (

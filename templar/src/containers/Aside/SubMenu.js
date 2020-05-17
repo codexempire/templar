@@ -33,9 +33,10 @@ const SubMenu = ({ menuLinks }) => {
                                                 }
                                             }}
                                         >
+                                            <img src={menu.icon} style={{ flexShrink: '1', margin: '0 1rem' }} width='15' height='15' />
                                             { menu.parent }
                                             
-                                            <img src={downArrow} style={{ flexShrink: '1', margin: '0 1rem' }} width='15' height='15' />
+                                            <img src={downArrow} style={{ flexShrink: '1', margin: '0 1rem', marginLeft: 'auto' }} width='15' height='15' />
                                         </Link>
                                     ) : null
                                 }
@@ -49,7 +50,8 @@ const SubMenu = ({ menuLinks }) => {
                                                 if (activeClass != null) activeClass.id = '';
                                                 e.target.id ='active';
                                             }}
-                                        >
+                                        >                                            
+                                            <img src={menu.icon} style={{ flexShrink: '1', margin: '0 1rem' }} width='15' height='15' />
                                             { menu.parent }
                                         </Link>
                                     ) : null
@@ -60,7 +62,7 @@ const SubMenu = ({ menuLinks }) => {
                                         menu.dropdowns.length > 0 ? (
                                             menu.dropdowns.map(dropdown => {
                                                 return (
-                                                    <a key={dropdown.name} href={dropdown.page} className='parent-nav' style={{ width: '50%', marginLeft: 'auto', justifyContent: 'left' }}>
+                                                    <a key={dropdown.name} href={dropdown.page} className='parent-nav' style={{ width: '70%', marginLeft: 'auto', justifyContent: 'left' }}>
                                                         { dropdown.name }
                                                     </a>
                                                 )
