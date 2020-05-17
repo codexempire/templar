@@ -8,7 +8,7 @@ const Transactions = () => {
     const [showTransaction, setShowTransaction] = useState(false);
     return (
         <>
-            <div style={{ display: 'flex', justifyContent: 'flex-start', padding: '3rem 5%', height: '100%' }}>
+            <div style={{ display: 'flex', justifyContent: 'flex-start', padding: '3rem 5%' }}>
                 <div className={!showTransaction ? 'ninety' : 'seventy'}>
                     
                     <div className='title' style={{ width: '100%', fontSize: '.8rem', color: '#ccc'  }}>

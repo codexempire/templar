@@ -65,11 +65,8 @@ const Aside = (props) => {
     const { bodyWidth } = props;
     return (
         <>
-        
-            <div style={{ border: '.2px solid #777', width: '100%', display: 'block', position: 'fixed', top: '4rem', zIndex: '101' }} />
             <div className={bodyWidth === 'full' ? 'aside-wrapper' : 'aside-wrapper show'}>
                 <div className='logo-div' style={{ width: '100%', height: '4rem', display: 'flex', justifyContent: 'center' }}>
-                    <div>
                     <img src={logo} style={{ flexShrink: '1', margin: '0 1rem' }} className='logo' />
                     <button
                         className='cancel-button'
@@ -77,8 +74,7 @@ const Aside = (props) => {
                         onClick={() => props.setWidth()}
                     >
                         x
-                    </button>
-                    </div>
+                </button>
                 </div>
 
                 <SubMenu menuLinks={menuLinks} />
