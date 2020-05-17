@@ -14,7 +14,7 @@ const Body = (props) => {
                 bodyWidth === 'full' ? { width: '100%', left: '0' } : { transition: 'ease-out 1s'}
             }
         >
-            <Header />
+            <Header setWidth={props.setWidth} />
 
             <div className='body-container'>
                 { children }

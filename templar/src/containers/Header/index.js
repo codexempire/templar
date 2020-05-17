@@ -7,6 +7,14 @@ import mail from '../../img/mail.PNG';
 const Header = (props) => {
     return (
         <div className="header">
+            <button
+                className='aside-button'
+                onClick={() => props.setWidth()}
+            >
+                <div style={{ width: '2rem', border: '1px solid black' }} />
+                <div style={{ width: '2rem', border: '1px solid black' }} />
+                <div style={{ width: '2rem', border: '1px solid black' }} />
+            </button>
             <div className='header-inner-wrapper' style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <button
                     style={{ background: 'transparent', borderLeft: '1px dashed #ccc', borderRight: '1px dashed #ccc', borderBottom: 'none', borderTop: 'none', outline: 'none', height: 'inherit' }}

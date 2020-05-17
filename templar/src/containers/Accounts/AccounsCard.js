@@ -28,7 +28,7 @@ const AccountsCard = ({ page, icon }) => {
                         textAlign: 'left',
                     }}
                 >57797757678</div>
-                <div>#2,650,234.96</div>
+                <div>&#8358;2,650,234.96</div>
             </div>
 
             <div style={{ width: '20%', padding: '1rem 0' }}>

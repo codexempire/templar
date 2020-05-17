@@ -8,7 +8,7 @@ import taxPng from '../../img/tax.PNG'
 
 const Accounts = () => {
     return (
-        <Body>
+        <>
             <div style={{ margin: '3rem auto', width: '90%' }}>
                 <h1 className='title'>
                     All accounts
@@ -24,10 +24,10 @@ const Accounts = () => {
                 </div>
             </div>
 
-            <h1 className='title' style={{ position: 'fixed', bottom: '0', width: '100%', zIndex: '2', borderBottom: 'none', borderTop: '1px solid #eee', paddingLeft: '4rem' }}>
+            <h1 className='title foot'>
                 All transactions
             </h1>
-        </Body>
+        </>
     )
 }
 
